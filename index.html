@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone Hunting Api</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
+    <header>
+
+    </header>
+    <main class="mx-auto">
+
+
+
+        <input id="search-field" type="text" placeholder="Search..." class=" border bg-cyan-100 input input-bordered w-full " />
+        <!-- search section -->
+
+        <button onclick="loadDataBtn()" class="btn btn-neutral my-2">Search</button>
+        <!-- search btn  -->
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10 p-10" id="phone-container">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
     <script src="js/phone.js"></script>
 </body>
+
 </html>
