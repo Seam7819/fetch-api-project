@@ -1,4 +1,4 @@
-const loadData = async (searchtext) => {
+const loadData = async (searchtext, searchThings) => {
     const res = await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchtext}`);
     const data = await res.json();
     // console.log(data);
@@ -38,3 +38,21 @@ const handleBtn = () => {
     loadData(searchtext)
 }
 
+const handleSearch = () => {
+    const searchSection = document.getElementById('search-section');
+    const searchThings = searchSection.value;
+    loadData(searchThings)
+}
+
+
+
+
+
+let a = 5;
+
+function SumOfNum (num1,num2) {
+    const results = num1+ num2 + a;
+    return results;
+}
+const sum = SumOfNum(4,5);
+console.log(sum);
